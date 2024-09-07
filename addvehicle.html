@@ -1,0 +1,86 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+
+            <title>"Vehicle/Person Lookup"</title>
+
+            <link rel="stylesheet" href="cw2.css" />
+
+        </head>
+        
+<body>
+    <header>
+      <h1>
+         Add a Vehicle
+      </h1>
+      <ul>
+         <li><a href = "cw2.html" class="link"> People Search </a></li>
+         <li><a href = "vehiclelookup.html" class="link" > Vehicle Search  </a> </li>
+         <li><a  class="link">Add a Vehicle </a></li>
+      </ul>
+   </header>
+    <div id="container">
+       <sidebar class="sidebar">
+          <h2>Welcome</h2>
+          <aside>
+         <div class = "image">
+            <img src="carsnap2.png" alt="Car Snap 2" width = "150" height = "100">
+         </aside>
+      </sidebar>
+         <main class="main">
+            <form id="vehicleForm">
+               <h3>Add New Vehicle</h3>
+               <label style="text-align:center;" for="rego">Registration Number: </label>
+               <input type="text" id="rego" name="rego" placeholder="Enter registration number..." required>
+            </br>
+               <label style="text-align:center;" for="make">Make:</label>
+               <input type="text" id="make" name="make" placeholder="Enter make..." required>
+            </br>
+               <label style="text-align:center;" for="model">Model:</label>
+               <input type="text" id="model" name="model" placeholder="Enter model..."required>
+            </br>
+               <label style="text-align:center;" for="colour">Colour:</label>
+               <input type="text" id="colour" name="colour" placeholder="Enter colour..." required>
+            </br>
+               <label style="text-align:center;" for="owner">Owner:</label>
+               <input type="text" id="owner" name="owner" placeholder="Enter owner name..."required>
+            </br>
+               <button type="button" id="addVehicle">Add vehicle</button>
+            </br>
+           </form>
+       
+           <form id="ownerForm" style="display:none;">
+               <h3>Add Owner</h3>
+               <label for="personid">Person ID:</label>
+               <input type="text" id="personid" name="personid" placeholder="Enter person ID ..." required>
+       
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" placeholder="Enter driver name..." required>
+           </br>
+               <label for="address">Address:</label>
+               <input type="text" id="address" name="address" placeholder="Enter address..." required>
+            </br>
+               <label for="dob">Date of Birth:</label>
+               <input type="text" id="dob" name="dob" placeholder="Enter DOB..." required>
+            </br>
+               <label for="license">License Number:</label>
+               <input type="text" id="license" name="license" placeholder="Enter license number..." required>
+            </br>
+               <label for="expire">License Expiry Date:</label>
+               <input type="text" id="expire" name="expire" placeholder="Enter license expiry date..." required>
+            </br>
+               <button type="button" id="addOwnerButton">Add Owner</button>
+           </form>
+       
+           <div id="message"></div>    
+         </main>
+   </div>
+      <footer>
+      <p>
+         Website by Nam Tonthat
+      </p>
+      </footer>
+      <script src="addvehicle.js" type="module"></script>
+</body>
+</html>

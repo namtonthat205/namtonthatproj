@@ -1,0 +1,51 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>"People Search"</title>
+
+            <link rel="stylesheet" href="cw2.css" />
+
+        </head>
+        
+<body>
+   <header>
+      <h1>
+         People Search
+      </h1>
+      <ul>
+         <li><a class="link"> People Search </a></li>
+         <li><a href = "vehiclelookup.html" class="link">Vehicle Search </a></li>
+         <li><a href = "addvehicle.html" class="link" > Add a Vehicle  </a> </li>
+      </ul>
+   </header>
+    <div id="container">
+       <sidebar class="sidebar">
+          <h2>Welcome</h2>
+          <aside>
+         <div class = "image">
+            <img src="carsnap.png" width= 125 height = 100 alt="Car Photo">
+         </aside>
+      </sidebar>
+       <main class="main">
+         <h3>Search Tool</h3>
+         <form id="searchForm">
+             <label for="driverName">Search by driver name:</label>
+             <input type="text" id="name" name="driverName" placeholder="Enter driver name..."><br>
+             <label for="licenseNumber">Search by driving license number:</label>
+             <input type="text" id="license" name="licenseNumber" placeholder="Enter driving license number..."><br>
+             <button type="submit">Submit</button>
+         </form>
+         <div id="results"></div>
+         <div id="message"></div>
+      </main>     
+      </div>
+      <footer>
+         <p>
+            Website by Nam Tonthat
+         </p>
+      
+      </footer>
+      <script src="peopleSearch.js" type="module"></script>
+</body>
+</html>

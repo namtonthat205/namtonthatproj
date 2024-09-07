@@ -1,0 +1,48 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>"Vehicle/Person Lookup"</title>
+
+            <link rel="stylesheet" href="cw2.css" />
+
+        </head>
+        
+<body>
+    <header>
+      <h1>
+         Vehicle Search
+      </h1>
+      <ul>
+         <li> <a href = "cw2.html" class="link"> People Search </a></li>
+         <li><a  class="link">Vehicle Search </a></li>
+         <li><a href = "addvehicle.html" class="link" > Add a Vehicle  </a> </li>
+      </ul>
+   </header>
+    <div id="container">
+       <sidebar class="sidebar">
+          <h2>Welcome</h2>
+          <aside>
+         <div class = "image">
+            <img src="carsnap3.png" alt="CarSnap3" width = "150" height = "100">
+         </aside>
+      </sidebar>
+      <main class="main">
+         <h3>Search Tool</h3>
+         <form id="searchForm">
+             <label for="Registration Name">Search by Registration Number:</label>
+             <input type="text" id="rego" name="rego" placeholder="Enter registration number..."><br>
+             <button type="submit">Submit</button>
+         </form>
+         <div id="results"></div>
+         <div id="message"></div>
+      </main>
+   </div>
+      <footer>
+         <p>
+            Website by Nam Tonthat
+         </p>
+      </footer>
+      <script src="vehicleLookup.js" type="module"></script>
+</body>
+</html>
